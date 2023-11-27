@@ -13,7 +13,7 @@ const VideoCart = ({item}) => {
         <CardContent sx={{background: colors.primary, height: '200px', position: 'relative'}}>
             <Link to={`/video/${item?.id.videoId}`}>
             <Typography my={'2px'} sz={{opacity :'0.4'}}>{moment(item.snippet?.publishedAt).fromNow()}</Typography>
-            <Typography variant='subtitle1' fontWeight={'bold'}>{item?.snippet?.title.slice(0, 50)}</Typography>
+            <Typography variant='subtitle1' fontWeight={'bold'}>{item?.snippet?.title.slice(0, 30)}</Typography>
             <Typography variant='subtitle2' sx={{opacity: 0.6}}>{item?.snippet?.description.slice(0, 70)}</Typography>
             </Link>
             <>

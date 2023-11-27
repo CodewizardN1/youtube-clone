@@ -20,7 +20,6 @@ const Main = () => {
         }
         getData()
     }, [selectedCategory])
-    console.log(selectedCategory);
   return (
     <Stack>
         <Category selectedCategoryHandler={selectedCategoryHandler} selectedCategory={selectedCategory} />
