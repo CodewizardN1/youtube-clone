@@ -6,9 +6,9 @@ import { CheckCircle } from '@mui/icons-material'
 import { Link } from 'react-router-dom'
 const VideoCart = ({item}) => {
   return (
-    <Card sx={{width: {xs: '100%', sm: '360px', xl: '360px', lg: '340px', md: '320px'}, boxShadow: 'none', borderRadius: 'none'}}>
+    <Card sx={{width: {xs: '100%', sm: '360px', xl: '360px', lg: '340px', md: '320px'}, boxShadow: 'none', borderRadius: 'none'}} className='video'>
       <Link to={`/video/${item?.id.videoId}`}>
-        <CardMedia image={item?.snippet?.thumbnails?.high?.url} alt={item?.snippet?.title} sx={{width :{xs: '100%', sm: '360px', xl: '360px', lg: '340px', md: '320px'}, height: {xs: '220px',md:'190px'}}}/>
+        <CardMedia image={item?.snippet?.thumbnails?.high?.url} alt={item?.snippet?.title} className='video-card' sx={{width :{xs: '100%', sm: '360px', xl: '360px', lg: '340px', md: '320px'}, height: {xs: '220px',md:'190px'}}}/>
       </Link>
         <CardContent sx={{background: colors.primary, height: '200px', position: 'relative'}}>
             <Link to={`/video/${item?.id.videoId}`}>

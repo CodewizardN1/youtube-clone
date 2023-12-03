@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth !important;
 }
 .search-bar{
   border: none;
@@ -63,3 +64,27 @@ a{
   }
 
 }
+
+@media screen and (min-width: 500px){
+
+ .video{
+  width: 350px !important;
+ }
+
+}
+
+@media screen and (max-width: 500px){
+ .search-bar{
+  width: 140px !important;
+ }
+}
+@media screen and (max-width: 372px){
+ .search-bar{
+  width: 100px !important;
+ }
+ .logo{
+  width: 100px !important;
+  height: 40px !important;
+ }
+}
+

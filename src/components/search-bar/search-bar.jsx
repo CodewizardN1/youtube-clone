@@ -23,7 +23,7 @@ const searchBar = () => {
         border: `1px solid ${colors.secondary}`,
         pl: 2,
         boxShadow: "none",
-        mr: 5,
+        mr: 0,
       }}
     >
       <input onChange={(e) => setValue(e.target.value)} value={value} type="text" placeholder="search..." className="search-bar" />
